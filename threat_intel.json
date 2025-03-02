@@ -1,0 +1,111 @@
+{
+  "group_info": {
+    "name": "Dark Kittens",
+    "aliases": ["DK-APT", "Feline Chaos"],
+    "motivation": "Corporate espionage, data theft, sabotage",
+    "threat_level": "High"
+  },
+  "indicators": {
+    "ip_ranges": [
+      "45.33.0.0/16",
+      "104.24.0.0/16",
+      "192.168.0.0/16"
+    ],
+    "user_agents": [
+      "Mozilla/5.0 (compatible; DarkScan/1.0)",
+      "Mozilla/5.0 (Windows NT 10.0; Trident/7.0; rv:11.0) like Gecko"
+    ],
+    "file_hashes": [
+      "5f4dcc3b5aa765d61d8327deb882cf99",
+      "d8578edf8458ce06fbc5bb76a58c5ca4"
+    ]
+  },
+  "system_patterns": [
+    {
+      "name": "Brute Force",
+      "pattern": "Failed login attempt for user",
+      "severity": 7,
+      "description": "Multiple failed login attempts to a single account"
+    },
+    {
+      "name": "Privilege Escalation",
+      "pattern": "(sudo su -|SUID binary)",
+      "severity": 9,
+      "description": "Attempt to gain higher privileges on the system"
+    },
+    {
+      "name": "File Tampering",
+      "pattern": "Unexpected file (modification|deletion)",
+      "severity": 8,
+      "description": "Critical system or configuration files being modified"
+    },
+    {
+      "name": "Unauthorized Access",
+      "pattern": "Unusual file access",
+      "severity": 8,
+      "description": "Access to sensitive files or directories by unauthorized users"
+    }
+  ],
+  "network_patterns": [
+    {
+      "name": "Port Scan",
+      "pattern": "SRC=(45\\.33|104\\.24|192\\.168)\\.[0-9]+\\.[0-9]+ DST=192\\.168\\.1\\.1",
+      "severity": 6,
+      "description": "Systematic scanning of multiple ports on a target system"
+    },
+    {
+      "name": "Data Exfiltration",
+      "pattern": "SIZE=[0-9]{8,}",
+      "severity": 9,
+      "description": "Large amount of data being transferred out of the network"
+    },
+    {
+      "name": "C2 Communication",
+      "pattern": "DST=(45\\.33|104\\.24)\\.[0-9]+\\.[0-9]+ PROTO=(TCP|UDP) (SPT|DPT)=443",
+      "severity": 8,
+      "description": "Communication with known command and control servers"
+    }
+  ],
+  "ttps": [
+    {
+      "tactic": "Initial Access",
+      "techniques": ["Phishing", "Valid Accounts"]
+    },
+    {
+      "tactic": "Execution",
+      "techniques": ["Command-Line Interface", "Scripting"]
+    },
+    {
+      "tactic": "Persistence",
+      "techniques": ["Create Account", "Scheduled Task"]
+    },
+    {
+      "tactic": "Privilege Escalation",
+      "techniques": ["Sudo", "Exploitation for Privilege Escalation"]
+    },
+    {
+      "tactic": "Defense Evasion",
+      "techniques": ["Timestomp", "Clear Command History"]
+    },
+    {
+      "tactic": "Credential Access",
+      "techniques": ["Brute Force", "Credential Dumping"]
+    },
+    {
+      "tactic": "Discovery",
+      "techniques": ["Network Service Scanning", "File and Directory Discovery"]
+    },
+    {
+      "tactic": "Lateral Movement",
+      "techniques": ["Remote Services", "Internal Spearphishing"]
+    },
+    {
+      "tactic": "Collection",
+      "techniques": ["Data from Local System", "Data Staged"]
+    },
+    {
+      "tactic": "Exfiltration",
+      "techniques": ["Exfiltration Over Web Service", "Data Compressed"]
+    }
+  ]
+}

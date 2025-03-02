@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Globomantics Defense Protocol - Network Diagram</text>
+  
+  <!-- Attacker Section -->
+  <rect x="50" y="120" width="200" height="150" fill="#ffcccc" stroke="#990000" stroke-width="2" rx="10" />
+  <text x="150" y="140" font-family="Arial" font-size="16" text-anchor="middle" fill="#990000">Dark Kittens Attacker</text>
+  <text x="150" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">(Simulated by simulate_attack.py)</text>
+  
+  <!-- Attacker Icon -->
+  <circle cx="150" cy="200" r="30" fill="#ff9999" stroke="#990000" stroke-width="2" />
+  <text x="150" y="205" font-family="Arial" font-size="24" text-anchor="middle" fill="#990000">🐱</text>
+  
+  <!-- Internet Cloud -->
+  <ellipse cx="400" cy="200" rx="100" ry="50" fill="#e6f2ff" stroke="#0066cc" stroke-width="2" />
+  <text x="400" y="205" font-family="Arial" font-size="16" text-anchor="middle" fill="#0066cc">Internet</text>
+  
+  <!-- Firewall -->
+  <rect x="370" y="280" width="60" height="30" fill="#ffcc99" stroke="#cc6600" stroke-width="2" />
+  <text x="400" y="300" font-family="Arial" font-size="12" text-anchor="middle" fill="#cc6600">Firewall</text>
+  
+  <!-- Globomantics Network -->
+  <rect x="150" y="340" width="500" height="220" fill="#e6ffe6" stroke="#009900" stroke-width="2" rx="10" />
+  <text x="400" y="360" font-family="Arial" font-size="16" text-anchor="middle" fill="#009900">Globomantics Network</text>
+  
+  <!-- Security Monitoring System -->
+  <rect x="200" y="390" width="150" height="120" fill="#ccffcc" stroke="#009900" stroke-width="2" rx="5" />
+  <text x="275" y="410" font-family="Arial" font-size="14" text-anchor="middle" fill="#006600">Security Monitoring</text>
+  <text x="275" y="430" font-family="Arial" font-size="12" text-anchor="middle" fill="#006600">monitor.py</text>
+  <text x="275" y="470" font-family="Arial" font-size="12" text-anchor="middle" fill="#006600">- Detects attacks</text>
+  <text x="275" y="490" font-family="Arial" font-size="12" text-anchor="middle" fill="#006600">- Triggers responses</text>
+  
+  <!-- Response System -->
+  <rect x="450" y="390" width="150" height="120" fill="#ccffcc" stroke="#009900" stroke-width="2" rx="5" />
+  <text x="525" y="410" font-family="Arial" font-size="14" text-anchor="middle" fill="#006600">Response System</text>
+  <text x="525" y="430" font-family="Arial" font-size="12" text-anchor="middle" fill="#006600">response.sh</text>
+  <text x="525" y="470" font-family="Arial" font-size="12" text-anchor="middle" fill="#006600">- Blocks IPs</text>
+  <text x="525" y="490" font-family="Arial" font-size="12" text-anchor="middle" fill="#006600">- Locks accounts</text>
+  
+  <!-- Arrows -->
+  <!-- Attacker to Internet -->
+  <line x1="250" y1="200" x2="300" y2="200" stroke="#990000" stroke-width="2" />
+  <polygon points="300,200 290,195 290,205" fill="#990000" />
+  
+  <!-- Internet to Firewall -->
+  <line x1="400" y1="250" x2="400" y2="280" stroke="#0066cc" stroke-width="2" />
+  <polygon points="400,280 395,270 405,270" fill="#0066cc" />
+  
+  <!-- Firewall to Network -->
+  <line x1="400" y1="310" x2="400" y2="340" stroke="#009900" stroke-width="2" />
+  <polygon points="400,340 395,330 405,330" fill="#009900" />
+  
+  <!-- Monitoring to Response -->
+  <line x1="350" y1="450" x2="450" y2="450" stroke="#006600" stroke-width="2" />
+  <polygon points="450,450 440,445 440,455" fill="#006600" />
+  
+  <!-- Legend -->
+  <rect x="600" y="120" width="150" height="150" fill="#f8f9fa" stroke="#333" stroke-width="1" rx="5" />
+  <text x="675" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Legend</text>
+  
+  <rect x="610" y="155" width="20" height="20" fill="#ffcccc" stroke="#990000" stroke-width="1" />
+  <text x="640" y="170" font-family="Arial" font-size="12" fill="#333" text-anchor="start">Attacker</text>
+  
+  <rect x="610" y="185" width="20" height="20" fill="#e6f2ff" stroke="#0066cc" stroke-width="1" />
+  <text x="640" y="200" font-family="Arial" font-size="12" fill="#333" text-anchor="start">Internet</text>
+  
+  <rect x="610" y="215" width="20" height="20" fill="#e6ffe6" stroke="#009900" stroke-width="1" />
+  <text x="640" y="230" font-family="Arial" font-size="12" fill="#333" text-anchor="start">Globomantics</text>
+  
+  <rect x="610" y="245" width="20" height="20" fill="#ffcc99" stroke="#cc6600" stroke-width="1" />
+  <text x="640" y="260" font-family="Arial" font-size="12" fill="#333" text-anchor="start">Firewall</text>
+</svg>

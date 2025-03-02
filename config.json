@@ -1,0 +1,53 @@
+{
+  "monitoring_interval": 5,
+  "alert_threshold": 6,
+  "response_actions": {
+    "block_ip": true,
+    "kill_process": true,
+    "lock_account": true,
+    "backup_data": true
+  },
+  "log_files": {
+    "system_log": "./security_ops/logs/system.log",
+    "network_log": "./security_ops/logs/network.log"
+  },
+  "alert_settings": {
+    "notifications": {
+      "console": true,
+      "log_file": true
+    },
+    "retention_period": 7
+  },
+  "threat_intel": {
+    "update_frequency": 24,
+    "sources": [
+      "Dark Kittens Indicators",
+      "Known Malicious IPs",
+      "Attack Patterns"
+    ]
+  },
+  "protected_resources": {
+    "systems": [
+      {
+        "name": "web_server",
+        "ip": "192.168.1.10",
+        "services": ["http", "https", "ssh"]
+      },
+      {
+        "name": "database_server",
+        "ip": "192.168.1.20",
+        "services": ["mysql", "ssh"]
+      },
+      {
+        "name": "file_server",
+        "ip": "192.168.1.30",
+        "services": ["ftp", "ssh", "smb"]
+      }
+    ],
+    "critical_files": [
+      "/etc/passwd",
+      "/var/www/html/config.php",
+      "/var/lib/mysql/users.db"
+    ]
+  }
+}
