@@ -113,7 +113,7 @@ Observe detection and response (in the monitoring terminal): You would see real-
 5. Review the findings - Identify any gaps in detection or response
 
 
-**Task 6: Enhance the Security Automation (Optional)**
+## Task 6: Enhance the Security Automation (Optional)**
 1. Modify the monitor.py script to improve detection capabilities
 2. Update the response.sh script to implement more effective countermeasures
 
