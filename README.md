@@ -5,7 +5,7 @@ This lab provides a hands-on opportunity to learn security automation and orches
 
 ## Scenario
 
-Globomantics runs an artificial island in the Gulf of Mexico that has been repeatedly targeted by the notorious hacking group Dark Kittens. As a SOC analyst ad security engineer at Globomantics, you've been tasked with implementing automated security monitoring and response capabilities to detect and thwart these attacks.
+Globomantics runs an artificial island in the Gulf of Mexico that has been repeatedly targeted by the notorious hacking group Dark Kittens. As a SOC analyst and security engineer at Globomantics, you've been tasked with implementing automated security monitoring and response capabilities to detect and thwart these attacks.
 
 Intelligence reports suggest the Dark Kittens use specific patterns in their attacks, including port scanning, brute force login attempts, unusual file access patterns, and data exfiltration techniques. Your job is to set up a system that automatically detects these patterns and responds appropriately.
 
