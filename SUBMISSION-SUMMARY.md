@@ -26,7 +26,7 @@ This security automation lab provides:
 
 
 ### Estimated Completion Time
-The lab is designed to be completed in approximately 20-30 minutes, once the environment is set up and depending on previous experience and how your system is configured.
+The lab is designed to be completed in approximately 15-20 minutes, once the environment is set up and depending on previous experience and how your system is configured.
 
 ### Answers to Submission Questions
 
