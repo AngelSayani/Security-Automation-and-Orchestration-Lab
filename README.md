@@ -22,7 +22,7 @@ This interactive lab provides valuable hands-on experience with security concept
 
 ## Network Diagram
 
-![Network Diagram](network_diagram.png)
+![Network Diagram](network-diagram.png)
 
 The lab environment consists of:
 
