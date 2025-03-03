@@ -26,7 +26,7 @@ This security automation lab provides:
 
 
 ### Estimated Completion Time
-The lab is designed to be completed in approximately 20-30 minutes, depending on previous experience and how your system is configured.
+The lab is designed to be completed in approximately 20-30 minutes, once the environment is set up and depending on previous experience and how your system is configured.
 
 ### Answers to Submission Questions
 
@@ -63,3 +63,4 @@ The lab runs entirely locally on either an Ubuntu or Windows machine with the fo
 - **Bash**: For response actions and environment management
 - **JSON**: For configuration and threat intelligence data
 - **Local file system**: For simulating logs and attack detection
+
