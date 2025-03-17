@@ -1,5 +1,5 @@
 # Security-Automation-and-Orchestration-Lab
-# Globomantics Defense Protocol - Anomaly Detection and Security Automation 
+# Defense Protocol - Anomaly Detection and Security Automation 
 
 This lab provides a hands-on opportunity to learn security automation and orchestration concepts through a simulated scenario. It's like a flight simulator for security operations - it creates a controlled environment where learners can practice skills safely. You'll deploy a security monitoring and response system to detect and counter attacks from the notorious "Dark Kittens" hacking group.
 
